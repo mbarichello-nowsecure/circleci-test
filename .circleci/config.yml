@@ -1,6 +1,12 @@
 version: 2.1
 orbs:
   auto_ci: nowsecure/ci-auto-orb@1.2.1
+workflows:
+  build:
+    jobs:
+      - build:
+          context:
+            - Work
 jobs:
   build:
     docker:
@@ -15,5 +21,3 @@ jobs:
         auto_wait: "30"
         auto_score: "50"
         auto_show_status_messages: "true"
-    - context:
-        - work
