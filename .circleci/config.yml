@@ -15,3 +15,5 @@ jobs:
         auto_wait: "30"
         auto_score: "50"
         auto_show_status_messages: "true"
+    - context:
+        - work
